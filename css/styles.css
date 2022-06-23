@@ -1,0 +1,168 @@
+/* box-sizing est appliqué à tous les éléments */
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+ 
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  font-family: 'Raleway', "Arial Black", Arial, Verdana, sans-serif;
+  
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  width: 1350px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 120px;
+}
+
+nav{
+  height: 100%;
+}
+
+.header-list{
+  display: flex;
+  list-style: none;
+  height: 100%;
+}
+
+.header-link{
+  height: 100%;
+  padding: 0px 30px 15px 30px;
+  display: flex;
+  align-items:center;
+  text-decoration: none;
+  font-size: 17px;
+  color: black;
+  font-weight: 500;
+  justify-content: center;
+}
+
+.header-link:hover{
+  color: #0065FC;
+  border-top: 3px solid #0065FC;
+  box-sizing: border-box;
+}
+
+header img {
+  height: 45px;
+  margin: 40px 20px;
+}
+
+.section-top{
+  display: flex;
+  flex-direction: column;
+  /* background-color: bisque; */
+  
+}
+
+.h1-top{
+  font-size: 22px;
+  font-weight: 800;
+  margin: 0px;
+}
+
+.subtitle-top{
+  font-size: 16px;
+  font-weight: 500;
+  margin: 12px 0px 20px 0px;
+}
+
+#research-box{
+  display: flex;
+}
+
+#map-icon{
+  background-color: #F2F2F2;
+  padding: 17px;
+  border-radius: 17px 0px 0px 17px;
+}
+
+#research-bar{
+  border: solid 1px #F2F2F2;
+  font-size: 16px;
+  font-weight: 700;
+  padding-left: 17px;
+}
+
+#research-button{
+  background-color: #0065FC;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 0px 17px 17px 0px;
+  padding: 17px;
+  cursor: pointer;
+}
+
+#research-button:hover{
+  background-color: #4D94FF;
+  transition: ease 0.3s;
+}
+
+#loupe-icon{
+  display: none;
+}
+
+/* style pour mobile */
+
+@media screen and (max-width: 768px)
+{
+
+  header {
+    flex-direction: column;
+    align-items:center;
+    height: auto;
+  }
+
+  nav{
+    width: 100%;
+  }
+
+  header li{
+    width: 100%;
+  }
+
+  .header-link:hover{
+    border-top: none;
+    border-bottom: 3px solid #0065FC
+  }
+
+ 
+  #research-box{
+    margin-top: 20px;
+  }
+
+  #research-button{
+    display: none;
+  }
+
+  #loupe-icon{
+    display: block;
+    background-color: #0065FC;
+    color: white;
+    padding: 17px;
+    border-radius: 17px;
+
+  }
+}
+
+/* style pour tablette */
+
+@media screen and (max-width: 992px)
+{
+  .section-top{
+    margin: 7% 5%;
+  }
+
+}
