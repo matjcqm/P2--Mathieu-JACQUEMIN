@@ -4,43 +4,42 @@
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
- 
 }
 
 body {
   display: flex;
   justify-content: center;
-  font-family: 'Raleway', "Arial Black", Arial, Verdana, sans-serif;
-  
+  font-family: "Raleway", "Arial Black", Arial, Verdana, sans-serif;
 }
 
 #container {
   display: flex;
   flex-direction: column;
-  width: 1350px;
+  width: 1430px;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   height: 120px;
+  margin: 0px 40px;
 }
 
-nav{
+nav {
   height: 100%;
 }
 
-.header-list{
+.header-list {
   display: flex;
   list-style: none;
   height: 100%;
 }
 
-.header-link{
+.header-link {
   height: 100%;
   padding: 0px 30px 15px 30px;
   display: flex;
-  align-items:center;
+  align-items: center;
   text-decoration: none;
   font-size: 17px;
   color: black;
@@ -48,9 +47,9 @@ nav{
   justify-content: center;
 }
 
-.header-link:hover{
-  color: #0065FC;
-  border-top: 3px solid #0065FC;
+.header-link:hover {
+  color: #0065fc;
+  border-top: 3px solid #0065fc;
   box-sizing: border-box;
 }
 
@@ -59,44 +58,51 @@ header img {
   margin: 40px 20px;
 }
 
-.section-top{
+main{
+  margin: 0px 40px;
+  
+}
+.section-top {
   display: flex;
   flex-direction: column;
   /* background-color: bisque; */
-  
 }
 
-.h1-top{
+.h1-top {
   font-size: 22px;
   font-weight: 800;
   margin: 0px;
 }
 
-.subtitle-top{
+.subtitle-top {
   font-size: 16px;
   font-weight: 500;
   margin: 12px 0px 20px 0px;
 }
 
-#research-box{
+#research-box {
   display: flex;
+  width: fit-content;
+  border: solid 1px #f2f2f2;
+  border-radius: 17px;
 }
 
-#map-icon{
-  background-color: #F2F2F2;
+#map-icon {
+  background-color: #f2f2f2;
   padding: 17px;
   border-radius: 17px 0px 0px 17px;
 }
 
-#research-bar{
-  border: solid 1px #F2F2F2;
+#research-bar {
+  
   font-size: 16px;
   font-weight: 700;
   padding-left: 17px;
+  border: none;
 }
 
-#research-button{
-  background-color: #0065FC;
+#research-button {
+  background-color: #0065fc;
   color: white;
   font-weight: 600;
   border: none;
@@ -105,64 +111,409 @@ header img {
   cursor: pointer;
 }
 
-#research-button:hover{
-  background-color: #4D94FF;
+#research-button:hover {
+  background-color: #4d94ff;
   transition: ease 0.3s;
 }
 
-#loupe-icon{
+#loupe-icon {
   display: none;
 }
 
+#filter {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.filter-link{
+  text-decoration: none;
+}
+
+.h2-title {
+  font-size: 18px;
+  font-weight: 800;
+  margin: 10px;
+}
+
+#filter-box {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 15px;
+}
+
+.filter-icon{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0065fc;
+  background-color: #deebff;
+  border-radius: 25px;
+  margin: -2px;
+  font-size: 20px;
+  
+}
+
+.filter-text {
+  font-size: 18px;
+  font-weight: 800;
+  border: none;
+  background-color: transparent;
+}
+
+.filter:hover{
+  background-color: #0065fc;
+  transition: ease 0.3s;
+}
+
+.filter:hover .filter-text{
+  transition: ease 0.3s;
+  color: white;
+}
+
+.filter{
+  display: flex;
+  border: solid 2px #dddddd;
+  border-radius: 25px;
+  column-gap: 20px;
+  padding-right: 20px ;
+  z-index: 0;
+}
+
+#info-box {
+  display: flex;
+  align-items: center;
+  margin: 40px 0px;
+  font-weight: 500;
+}
+
+#info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0065fc;
+  font-size: 13px;
+  border-radius: 12px;
+  border: solid 1px #dddddd;
+  margin: 0px 15px;
+  width: 24px;
+  height: 24px;
+}
+
+#section-double {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4%;
+}
+
+.section-line {
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+#section1{
+  width: 65%;
+}
+
+#section2{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ width: 31%;
+}
+
+.card {
+  background-color: white;
+  border-radius: 20px;
+  margin: 15px;
+  width: 245px;
+  height: auto;
+  font-size: 15px;
+  box-shadow: 1px 1px 20px #E5E5E5;
+}
+
+.card2{
+  background-color: white;
+  display: flex;
+  border-radius: 20px;
+  margin: 20px;
+  width: 350px;
+  height: auto;
+  font-size: 15px;
+  box-shadow: 1px 1px 20px #E5E5E5;
+}
+
+.card-text{
+  display: flex;
+  flex-direction: column;
+}
+
+.card-link {
+  text-decoration: none;
+  color: black;
+}
+
+.card-link:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: ease 0.4s;
+}
+
+.card-img {
+  width: 95%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+  margin: 5px;
+}
+
+.card-img2{
+  display: flex;
+  width: 50%;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 20px 0px 0px 20px;
+  margin: 5px;
+}
+
+.card-title {
+  font-size: 14px;
+  margin: 5px 0px 6px 15px;
+}
+
+.card-rate {
+  font-size: 14px;
+  margin: 5px 0px 6px 15px;
+}
+
+.card-star {
+  font-size: 12px;
+  padding: 5px 0px 10px 15px;
+}
+
+.star-icon {
+  color: #0065fc;
+}
+
+.star-icon-empty {
+  color: #f2f2f2;
+}
+
+.h1-section {
+  display: flex;
+  justify-content: space-between;
+  font-size: 22px;
+  font-weight: 700;
+  width: 90%;
+  margin: 0px 20px;
+}
+
+.list-cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card-button{
+  margin: 15px 20px;
+}
+
+.activites{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 2% 0px;
+  row-gap: 20px;
+}
+
+.act-double{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 20px;
+}
+.card3{
+  border-radius: 25px;
+  border: solid 1px #f2f2f2;
+  box-shadow: 1px 1px 10px #E5E5E5;
+  /* margin-bottom: 15%; */
+}
+
+.card-img3{
+  width: 300px;
+  object-fit: cover;
+  border-radius: 25px 25px 0px 0px;
+}
+
+.activite-h3{
+  margin: 15px;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+#port{
+  height: 390px;
+}
+
+#fort{
+  height: 180px;
+}
+
+#iles{
+  height: 110px;
+}
+
+#calanques{
+  height: 390px;
+}
+
+#notre-dame{
+  height: 140px;
+}
+
+#longchamp{
+  height: 150px;
+}
+
+footer{
+  display: flex;
+  background-color: #f2f2f2;
+  padding: 40px;
+  margin-top: 2%;
+  row-gap: 30px;
+}
+
+.h2-footer{
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.list-footer{
+  margin: 15px 0px;
+  list-style-type:none;
+  
+}
+
+.column-footer{
+  width: 50%;
+}
+
+.link-footer{
+ text-decoration: none;
+ color: black;
+ font-weight: 500; 
+}
+
+
+
 /* style pour mobile */
 
-@media screen and (max-width: 768px)
-{
-
+@media screen and (max-width: 768px) {
   header {
     flex-direction: column;
-    align-items:center;
+    align-items: center;
     height: auto;
   }
 
-  nav{
+  nav {
     width: 100%;
   }
 
-  header li{
+  header li {
     width: 100%;
   }
 
-  .header-link:hover{
+  .header-link:hover {
     border-top: none;
-    border-bottom: 3px solid #0065FC
+    border-bottom: 3px solid #0065fc;
   }
 
- 
-  #research-box{
+  #research-box {
     margin-top: 20px;
   }
 
-  #research-button{
+  #research-bar {
+    width: 280px;
+  }
+
+  #research-button {
     display: none;
   }
 
-  #loupe-icon{
+  #loupe-icon {
     display: block;
-    background-color: #0065FC;
+    background-color: #0065fc;
     color: white;
     padding: 17px;
     border-radius: 17px;
+  }
 
+  #loupe-icon:hover {
+    background-color: #4d94ff;
+    transition: ease 0.3s;
+  }
+
+  main{
+    margin: 0px;
+  }
+
+  #section2{
+    width: 100%;
+    border-radius: 0px;
+  }
+
+  #section1{
+    width: 100%;
+    background-color: white;
+  }
+
+  #section-double {
+    flex-direction: column-reverse;
+  }
+
+  .card, .card2, .card3{
+    width: 370px;
+  }
+
+  .list-cards{
+    width: auto;
+  }
+
+  .activites{
+    justify-content: center;
+  }
+
+  .card-img3{
+    width: 100%;
+  }
+
+  #port, #fort, #iles, #calanques, #notre-dame, #longchamp{
+    height: 140px;
+  }
+
+  footer{
+    flex-direction: column;
+  }
+  
+  .column-footer{
+    width: 100%;
+  }
+
+  #h1-activite{
+    margin-bottom: 35px;
   }
 }
 
 /* style pour tablette */
 
-@media screen and (max-width: 992px)
-{
-  .section-top{
+@media screen and (max-width: 992px) {
+  .section-top {
     margin: 7% 5%;
   }
-
 }
