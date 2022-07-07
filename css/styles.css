@@ -60,7 +60,6 @@ header img {
 
 main{
   margin: 0px 40px;
-  
 }
 .section-top {
   display: flex;
@@ -134,7 +133,7 @@ main{
 .h2-title {
   font-size: 18px;
   font-weight: 800;
-  margin: 10px;
+  margin: 15px 40px 15px 0px;
 }
 
 #filter-box {
@@ -164,6 +163,7 @@ main{
   font-weight: 800;
   border: none;
   background-color: transparent;
+  margin-left: -7px;
 }
 
 .filter:hover{
@@ -181,7 +181,7 @@ main{
   border: solid 2px #dddddd;
   border-radius: 25px;
   column-gap: 20px;
-  padding-right: 20px ;
+  padding-right: 17px ;
   z-index: 0;
 }
 
@@ -249,9 +249,17 @@ main{
   box-shadow: 1px 1px 20px #E5E5E5;
 }
 
-.card-text{
+.card-contents{
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.card-text2{
+  display: flex;
+  flex-direction: column;
+  padding: 10px 15px;
 }
 
 .card-link {
@@ -275,21 +283,24 @@ main{
 
 .card-img2{
   display: flex;
-  width: 50%;
+  width: 40%;
   height: 130px;
   object-fit: cover;
   border-radius: 20px 0px 0px 20px;
   margin: 5px;
 }
 
-.card-title {
-  font-size: 14px;
+.card-text {
   margin: 5px 0px 6px 15px;
 }
 
-.card-rate {
+.card-title{
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.card-rate{
   font-size: 14px;
-  margin: 5px 0px 6px 15px;
 }
 
 .card-star {
@@ -311,7 +322,7 @@ main{
   font-size: 22px;
   font-weight: 700;
   width: 90%;
-  margin: 0px 20px;
+  margin: 25px 20px 12px 20px;
 }
 
 .list-cards{
@@ -321,7 +332,7 @@ main{
 }
 
 .card-button{
-  margin: 15px 20px;
+  margin: 25px 20px;
 }
 
 .activites{
@@ -419,6 +430,8 @@ footer{
     flex-direction: column;
     align-items: center;
     height: auto;
+    width: auto;
+    margin: 0px;
   }
 
   nav {
@@ -439,7 +452,7 @@ footer{
   }
 
   #research-bar {
-    width: 280px;
+    width: 245px;
   }
 
   #research-button {
@@ -460,7 +473,12 @@ footer{
   }
 
   main{
-    margin: 0px;
+    width: 100%;
+    margin: 0%;
+  }
+
+  .section-top{
+    margin: 5%;
   }
 
   #section2{
@@ -468,13 +486,27 @@ footer{
     border-radius: 0px;
   }
 
+  #filter-box{
+    column-gap: 10px;
+  }
+
+  #info-box{
+    margin-left: -15px;
+  }
+
   #section1{
     width: 100%;
     background-color: white;
   }
 
+  #section2{
+    width: 100%;
+    background-color: #0065fc;
+  }
+
   #section-double {
     flex-direction: column-reverse;
+    width: 100%;
   }
 
   .card, .card2, .card3{
@@ -508,12 +540,15 @@ footer{
   #h1-activite{
     margin-bottom: 35px;
   }
+
+
+
 }
 
 /* style pour tablette */
 
 @media screen and (max-width: 992px) {
-  .section-top {
-    margin: 7% 5%;
-  }
+  /* .section-top {
+    margin: 7% 5%; */
+  
 }
