@@ -61,6 +61,7 @@ header img {
 main{
   margin: 0px 40px;
 }
+
 .section-top {
   display: flex;
   flex-direction: column;
@@ -153,12 +154,12 @@ main{
   background-color: #deebff;
   border-radius: 25px;
   margin: -2px;
-  font-size: 20px;
+  font-size: 18px;
   
 }
 
 .filter-text {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 800;
   border: none;
   background-color: transparent;
@@ -244,7 +245,7 @@ main{
   background-color: white;
   display: flex;
   border-radius: 20px;
-  margin: 20px;
+  margin: 10px 0px 23px 0px;
   width: 350px;
   height: auto;
   font-size: 15px;
@@ -261,7 +262,7 @@ main{
 .card-text2{
   display: flex;
   flex-direction: column;
-  padding: 10px 15px;
+  padding: 5px 15px;
   row-gap: 10px;
 }
 
@@ -278,7 +279,7 @@ main{
 
 .card-img {
   width: 95%;
-  height: 110px;
+  height: 115px;
   object-fit: cover;
   border-radius: 15px 15px 0px 0px;
   align-self: center;
@@ -288,7 +289,7 @@ main{
 .card-img2{
   display: flex;
   width: 40%;
-  height: 130px;
+  height: 133px;
   object-fit: cover;
   border-radius: 20px 0px 0px 20px;
   margin: 5px;
@@ -319,7 +320,7 @@ main{
 
 .card-star {
   font-size: 12px;
-  padding: 5px 0px 10px 15px;
+  padding: 0px 0px 10px 15px;
 }
 
 .star-icon {
@@ -336,8 +337,8 @@ main{
   font-size: 22px;
   font-weight: 700;
   width: 90%;
-  margin: 25px 20px 12px 20px;
-}
+  margin: 20px;
+  }
 
 .list-cards{
   display: flex;
@@ -347,7 +348,10 @@ main{
 }
 
 .card-button{
-  margin: 25px 20px;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  margin-left: 20px;
 }
 
 .activites{
@@ -386,6 +390,7 @@ main{
 
 #fort{
   height: 180px;
+  object-position: 0% 40%;
 }
 
 #iles{
@@ -399,10 +404,12 @@ main{
 
 #notre-dame{
   height: 140px;
+  object-position: 0% 10%;
 }
 
 #longchamp{
   height: 150px;
+  object-position: 0% 15%;
 }
 
 footer{
@@ -438,7 +445,7 @@ footer{
 
 /* style pour mobile */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   header {
     flex-direction: column;
     align-items: center;
@@ -498,8 +505,12 @@ footer{
     margin: 0%;
   }
 
+  .filter-icon{
+    width: 45px;
+    height: 45px;
+  }
   .section-top{
-    margin: 5%;
+    margin: 5% 4%;
   }
 
   .section-line {
@@ -529,14 +540,18 @@ footer{
     margin: 30px 0px 20px -15px;
   }
 
-  #info{
-    width: 25px;
-    height: 20px;
-  }
-
-  .card, .card2, .card3{
+  .card, .card3{
     width: 360px;
     margin: 7px;
+  }
+
+  .card2{
+    width: 660px;
+    margin: 7px;
+  }
+
+  .h1-section{
+    margin-top: 35px;
   }
 
   .list-cards{
@@ -546,6 +561,12 @@ footer{
 
   .activites{
     justify-content: center;
+    row-gap: 10px;
+  }
+
+  .act-double{
+    display: contents;
+    row-gap: 10px;
   }
 
   .card-img3{
@@ -556,14 +577,6 @@ footer{
     height: 140px;
   }
 
-  footer{
-    flex-direction: column;
-  }
-  
-  .column-footer{
-    width: 100%;
-  }
-
   #h1-activite{
     margin-bottom: 20px;
   }
@@ -571,13 +584,42 @@ footer{
   .list-cards{
     row-gap: 0px;
   }
+
+  footer{
+    justify-content: space-between;
+    padding: 60px;
+  }
+
+  .column-footer{
+    width: 29%;
+  }
 }
 
 
 /* style pour tablette */
 
-@media screen and (max-width: 992px) {
-  /* .section-top {
-    margin: 7% 5%; */
+@media screen and (max-width: 768px) {
+
+  .section-top{
+    margin: 10% 5% 5% 5%;
+  }
+
+  footer{
+    flex-direction: column;
+    margin-top: 30px;
+  }
   
+  .column-footer{
+    width: 100%;
+  }
+
+  .card2{
+    width: 360px;
+    margin: 7px;
+  }
+
+  #info{
+    width: 25px;
+    height: 20px;
+  }
 }
