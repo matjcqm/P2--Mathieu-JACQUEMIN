@@ -443,9 +443,9 @@ footer{
 
 
 
-/* style pour mobile */
+/* tablet style */
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   header {
     flex-direction: column;
     align-items: center;
@@ -596,9 +596,9 @@ footer{
 }
 
 
-/* style pour tablette */
+/* mobile style */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
   .section-top{
     margin: 10% 5% 5% 5%;
